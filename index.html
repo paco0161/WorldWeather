@@ -8,11 +8,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>World Weather</title>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
     </head>
     <body>
         <div class="grid-container">
             <div class="grid-clock top-left">
+                <div class="hour-hand hr" id="hr"></div>
+                <div class="minute-hand mn" id="mn"></div>
+                <div class="second-hand sc" id="sc"></div>
                 <span style="--i:1;"><b>1</b></span>
                 <span style="--i:2;"><b>2</b></span>
                 <span style="--i:3;"><b>3</b></span>
@@ -30,5 +32,6 @@
             <div class="grid-clock bottom-left"></div>
             <div class="grid-clock bottom-right"></div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
