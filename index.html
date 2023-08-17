@@ -12,9 +12,9 @@
     <body>
         <div class="grid-container">
             <div class="grid-clock top-left">
-                <div class="hour-hand hr" id="hr"></div>
-                <div class="minute-hand mn" id="mn"></div>
-                <div class="second-hand sc" id="sc"></div>
+                <div class="hour-hand hr"></div>
+                <div class="minute-hand mn"></div>
+                <div class="second-hand sc"></div>
                 <span style="--i:1;"><b>1</b></span>
                 <span style="--i:2;"><b>2</b></span>
                 <span style="--i:3;"><b>3</b></span>
@@ -27,10 +27,36 @@
                 <span style="--i:10;"><b>10</b></span>
                 <span style="--i:11;"><b>11</b></span>
                 <span style="--i:12;"><b>12</b></span>
+
+                <div class="digital-time">
+                    <div class="digital-hour" id="digital-hour-left">00</div>
+                    <div class="digital-minute" id="digital-minute-left">00</div>
+                    <div class="digital-second" id="digital-second-left">00</div>
+                </div>
             </div>
-            <div class="grid-clock top-right"></div>
-            <div class="grid-clock bottom-left"></div>
-            <div class="grid-clock bottom-right"></div>
+            <div class="grid-clock top-right">
+                <div class="hour-hand hr"></div>
+                <div class="minute-hand mn"></div>
+                <div class="second-hand sc"></div>
+                <span style="--i:1;"><b>1</b></span>
+                <span style="--i:2;"><b>2</b></span>
+                <span style="--i:3;"><b>3</b></span>
+                <span style="--i:4;"><b>4</b></span>
+                <span style="--i:5;"><b>5</b></span>
+                <span style="--i:6;"><b>6</b></span>
+                <span style="--i:7;"><b>7</b></span>
+                <span style="--i:8;"><b>8</b></span>
+                <span style="--i:9;"><b>9</b></span>
+                <span style="--i:10;"><b>10</b></span>
+                <span style="--i:11;"><b>11</b></span>
+                <span style="--i:12;"><b>12</b></span>
+
+                <div class="digital-time">
+                    <div class="digital-hour" id="digital-hour-right">00</div>
+                    <div class="digital-minute" id="digital-minute-right">00</div>
+                    <div class="digital-second" id="digital-second-right">00</div>
+                </div>
+            </div>
         </div>
         <script src="script.js"></script>
     </body>
