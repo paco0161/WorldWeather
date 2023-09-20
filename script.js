@@ -3,11 +3,11 @@ var hr = document.getElementsByClassName('hour-hand');
 var mn = document.getElementsByClassName('minute-hand');
 var sc = document.getElementsByClassName('second-hand');
 
-var digitalHr = document.getElementsByClassName('digital-hour');
-var digitalMn = document.getElementsByClassName('digital-minute');
-var digitalSc = document.getElementsByClassName('digital-second');
+const digitalHr = document.getElementsByClassName('digital-hour');
+const digitalMn = document.getElementsByClassName('digital-minute');
+const digitalSc = document.getElementsByClassName('digital-second');
 
-const timeZones = ["America/Toronto", "Asia/Tokyo"];
+const timeZones = ["America/Toronto", "Asia/Hong_Kong"];
 
 setInterval(function() {
     let day = timeZones.map(t => new Date(new Date().toLocaleString("en-US", {timeZone: t})));
