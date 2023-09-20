@@ -9,40 +9,60 @@
     display: grid;
     position: relative;
     grid-template-columns: auto auto;
-    grid-gap: 300px;
+    grid-gap: 600px;
     color: #444;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
 }
 
-.grid-clock {
+.middle {
+    display: grid;
+    position: relative;
+    grid-template-columns: auto;
+    grid-gap: 600px;
+    color: #444;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.clock-layout {
+    opacity: 0.5;
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    z-index: 1;
+}
+
+/* .grid-clock {
     position: relative;
     width: 400px;
     height: 400px;
     margin-top: 200px;
     background: #fff;
     border-radius: 50%;
-    box-shadow: 10px 50px 70px rgba(0,0,0,0.25),
-    inset 5px 5px 10px rgba(0,0,0,0.5),
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.5),
     inset 5px 5px 20px rgba(255,255,255,0.2),
     inset -5px -5px 15px rgba(0,0,0,0.75);
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.grid-clock::before {
+.clock-layout::before {
     content: '';
     position: absolute;
     width: 3px;
-    height: 3px;
-    background: #fff;
+    height: 5px;
+    color: blue;
     border: 1px solid #444;
     border-radius: 50%;
+    z-index: 5;
 }
 
-.grid-clock span{
+/* .grid-clock span{
     position: absolute;
     inset: 8px;
     color: #444;
@@ -54,22 +74,27 @@
     opacity: 0.75;
     display: inline-block;
     transform: rotate(calc(-30deg * var(--i)));
-}
+} */
 
 .hour-hand, .hr{
     width: 1px;
     height: 55%;
+    top: 66.3%;
+    left: 19.8%;
 }
 
-.minute-hand, .mn{
+.minute-hand, .mn,
+.second-hand, .sc {
     width: 1px;
     height: 90%;
+    left: 20%;
 }
-
-.second-hand, .sc{
-    width: 1px;
-    height: 90%;
-}
+/* 
+.hour-hand, .hr,
+.minute-hand, .mn,
+.second-hand, .sc {
+    bottom: 50%;
+} */
 
 .hr, .mn, .sc{
     position: absolute;
@@ -111,7 +136,7 @@
     position: relative;
     display: flex;
     font-size: 1.5em;
-    margin-top: 500px;
+    margin-top: 450px;
 }
 
 .digital-time div {
@@ -142,3 +167,34 @@
         opacity: 0;
     }
 }
+
+.location {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+}
+
+/* .location div:nth-child(0) {
+    position: relative;
+    text-align: center;
+    width: 60px;
+    font-weight: 600;
+    color: #151517;
+} */
+
+.form {
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* .location .bi-box-arrow-down-right {
+    font-weight: bold;
+} */

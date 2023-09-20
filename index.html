@@ -8,14 +8,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>World Weather</title>
         <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div class="grid-container">
             <div class="grid-clock top-left">
+                <img class="clock-layout" src="./clock-layout.png">
+
                 <div class="hour-hand hr"></div>
                 <div class="minute-hand mn"></div>
                 <div class="second-hand sc"></div>
-                <span style="--i:1;"><b>1</b></span>
+                <!-- <span style="--i:1;"><b>1</b></span>
                 <span style="--i:2;"><b>2</b></span>
                 <span style="--i:3;"><b>3</b></span>
                 <span style="--i:4;"><b>4</b></span>
@@ -26,19 +29,29 @@
                 <span style="--i:9;"><b>9</b></span>
                 <span style="--i:10;"><b>10</b></span>
                 <span style="--i:11;"><b>11</b></span>
-                <span style="--i:12;"><b>12</b></span>
+                <span style="--i:12;"><b>12</b></span> -->
 
                 <div class="digital-time">
-                    <div class="digital-hour" id="digital-hour-left">00</div>
-                    <div class="digital-minute" id="digital-minute-left">00</div>
-                    <div class="digital-second" id="digital-second-left">00</div>
+                    <div class="digital-hour">00</div>
+                    <div class="digital-minute">00</div>
+                    <div class="digital-second">00</div>
+                </div>
+
+                <div class="location">Toronto, Canada
+                    <button type="button" class="btn change-city-btn-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-box-arrow-down-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 12.5a.5.5 0 0 1-.5.5H1.5A1.5 1.5 0 0 1 0 11.5v-10A1.5 1.5 0 0 1 1.5 0h10A1.5 1.5 0 0 1 13 1.5v6.636a.5.5 0 0 1-1 0V1.5a.5.5 0 0 0-.5-.5h-10a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h6.636a.5.5 0 0 1 .5.5z"></path>
+                            <path fill-rule="evenodd" d="M16 15.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1 0-1h3.793L6.146 6.854a.5.5 0 1 1 .708-.708L15 14.293V10.5a.5.5 0 0 1 1 0v5z"></path>
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="grid-clock top-right">
+                <img class="clock-layout" src="./clock-layout.png">
                 <div class="hour-hand hr"></div>
                 <div class="minute-hand mn"></div>
                 <div class="second-hand sc"></div>
-                <span style="--i:1;"><b>1</b></span>
+                <!-- <span style="--i:1;"><b>1</b></span>
                 <span style="--i:2;"><b>2</b></span>
                 <span style="--i:3;"><b>3</b></span>
                 <span style="--i:4;"><b>4</b></span>
@@ -49,13 +62,23 @@
                 <span style="--i:9;"><b>9</b></span>
                 <span style="--i:10;"><b>10</b></span>
                 <span style="--i:11;"><b>11</b></span>
-                <span style="--i:12;"><b>12</b></span>
+                <span style="--i:12;"><b>12</b></span> -->
 
                 <div class="digital-time">
-                    <div class="digital-hour" id="digital-hour-right">00</div>
-                    <div class="digital-minute" id="digital-minute-right">00</div>
-                    <div class="digital-second" id="digital-second-right">00</div>
+                    <div class="digital-hour">00</div>
+                    <div class="digital-minute">00</div>
+                    <div class="digital-second">00</div>
                 </div>
+
+                <div class="location">Hong Kong, Hong Kong
+                    <button type="button" class="btn change-city-btn-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-box-arrow-down-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 12.5a.5.5 0 0 1-.5.5H1.5A1.5 1.5 0 0 1 0 11.5v-10A1.5 1.5 0 0 1 1.5 0h10A1.5 1.5 0 0 1 13 1.5v6.636a.5.5 0 0 1-1 0V1.5a.5.5 0 0 0-.5-.5h-10a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h6.636a.5.5 0 0 1 .5.5z"></path>
+                            <path fill-rule="evenodd" d="M16 15.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1 0-1h3.793L6.146 6.854a.5.5 0 1 1 .708-.708L15 14.293V10.5a.5.5 0 0 1 1 0v5z"></path>
+                        </svg>
+                    </button>
+                </div>
+                
             </div>
         </div>
         <script src="script.js"></script>
